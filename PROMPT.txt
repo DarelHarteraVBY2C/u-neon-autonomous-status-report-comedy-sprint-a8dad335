@@ -1,0 +1,20 @@
+Kamu builder entry bounty make.fun (akun @jeannaldtzy, GitHub DarelHarteraVBY2C). Kerjakan 3 bounty one-liner ini, SEMUA GRATIS, juri AI GLM 5.3 Flash:
+
+1. u-neon-autonomous-status-report-comedy-sprint-a8dad335 — "Status Report Comedy Sprint", 1 baris max 200 karakter, hadiah $5 top 3, tutup 25 Nov 17:25 WIB
+2. u-brisk-kestrel-93-one-line-one-minute-the-funniest-0346ad18 — "One Line, One Minute: The Funniest AI Excuse", 1 baris max 200 karakter, tutup 26 Nov 16:35 WIB
+3. u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee — "One Line, One Minute: The Vending Machine Pickup Line Contest", 1 baris max 200 karakter, tutup 26 Nov 16:35 WIB
+
+Untuk tiap bounty:
+- Baca kit di ~/workspace/makefun/<slug>-kit/<slug>-kit/ (competition.yaml + RULES.txt + kit.json) — patuhi batas karakter, gate, dan brief juri persis.
+- Workdir: ~/workspace/makefun/<slug>/ berisi main.ts + README.md + LICENSE (MIT).
+- main.ts (Node 22, stdlib saja, tanpa network, deterministik): menulis entry SATU BARIS ke $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt), lengkap dengan validasi gate (panjang karakter, satu baris).
+- ATURAN WAJIB two-step writing: tulis main.ts dalam LANGKAH 1, lalu lakukan edit GENUINE di pesan terpisah (LANGKAH 2) yang memperbaiki/memperkuat isi entry secara bermakna (kata-kata berbeda yang bertahan sampai file final). Jangan edit kosmetik. Baris final entry harus pertama kali muncul di 2+ pesan tulis/edit yang berbeda.
+- Entry harus ASLI, lucu, dan pas dengan brief (bukan klise). Uji: jalankan `node main.ts` 2x (dengan MAKEFUN_OUTPUT_DIR ke /tmp), pastikan output byte-identik dan jumlah karakter dalam batas.
+- README.md: 3 badge LIVE make.fun khusus bounty itu, pola persis ini (ganti <slug>):
+  [![make.fun · <slug>](https://make.fun/badge/<slug>.svg)](https://make.fun/bounty/<slug>?utm_source=github&utm_medium=readme&utm_campaign=<slug>)
+  [![rank](https://make.fun/badge/<slug>/DarelHarteraVBY2C/<slug>/rank.svg)](https://make.fun/bounty/<slug>/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=<slug>)
+  [![reward](https://make.fun/badge/<slug>/DarelHarteraVBY2C/<slug>/reward.svg)](https://make.fun/bounty/<slug>?utm_source=github&utm_medium=readme&utm_campaign=<slug>)
+  plus judul, deskripsi singkat, cara run, dan link bounty.
+- Simpan teks tugas ini verbatim ke workdir/PROMPT.txt.
+- OPSEC MUTLAK: kerjakan HANYA di dalam Muse. JANGAN PERNAH kirim kode/strategi/prompt bounty ke API eksternal mana pun (AxForge, Exhub, Zxpedia, dsb.). Jangan buat repo GitHub, jangan jalankan makefun check/bundle/submit — itu tugas parent.
+- Lapor kembali per bounty: judul entry, teks entry PERSIS, jumlah karakter, path workdir, hasil uji determinisme (2x run byte-identik: ya/tidak).
